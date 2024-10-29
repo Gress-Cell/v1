@@ -1,0 +1,61 @@
+#!/bin/bash
+clear
+# // color format 38
+CC='\e[38;5;14m'  # 
+LO='\e[38;5;162m' # PURPLE HACKER
+UK='\e[38;5;99m'  # UNGU KOLOT
+BK='\e[38;5;196m' # BEREM KOLOT 
+R1='\e[38;5;155m' # HEJO SEMU BODAS
+R2='\e[38;5;49m'  # HEJO LIME / APEL
+BC='\e[38;5;195m' # BODAS CERAH PISAN
+HU='\e[38;5;115m' # HEJO SEMU ABU
+UB='\e[38;5;147m' # UNGU KABODASAN
+KT='\e[38;5;187m' # KONENG TARIGU
+# // color fromat 5 
+BlueCyan='\e[5;36m'
+WhiteBe='\e[5;37m'
+GreenBe='\e[5;32m'
+Xark='\e[0m'
+
+function LTX() {
+echo -e "\e[5;36m  ————————————————————————————————————————\e[0m"
+}
+
+
+function Lunatix_Banner() {
+echo -e "\e[5;36m  ————————————————————————————————————————\e[0m"
+echo -e " \e[5;36m|\e[0;35m                 PROTOCOL     \e[0m          \e[5;36m|\e[0m"
+echo -e "\e[5;36m  ————————————————————————————————————————\e[0m"
+}
+
+
+function Menu_Features() {
+Lunatix_Banner
+echo -e " \e[5;36m |\e[0m \e[97;1m 1.) Ssh Manager                    \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m 2.) Vmess Manager                 \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m 3.) Trojan Manager                 \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m 4.) Shadowsock Manager           \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m 5.) Noobzvpns Manager            \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m 6.) Vless Manager                  \e[5;36m|  \e[0m"
+echo -e " \e[5;36m |\e[0m \e[97;1m x.) Exit                             \e[5;36m|  \e[0m"
+LTX
+}
+
+
+
+
+Menu_Features
+
+
+
+# // Select Display
+read -p "   Just Input 1-6 or x :  " Ltt
+case $Ltt in
+01 | 1) clear ; mssh-mod ;;
+02 | 2) clear ; mvme-mod ;;
+03 | 3) clear ; mtro-mod ;;
+04 | 4) clear ; mssr-mod ;;
+05 | 5) clear ; mnob-mod ;;
+06 | 6) clear ; mvle-mod ;;
+*) exit ;;
+esac
